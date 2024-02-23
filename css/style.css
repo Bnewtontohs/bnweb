@@ -21,7 +21,7 @@ section {
 .gallery {
     position: relative;
     max-width: 1500px;
-    height: 70%;
+    height: 500px;
     overflow: hidden;
 }
 
@@ -38,7 +38,7 @@ section {
 }
 
 .slide img {
-    height: 95%;
+    height: 400px;
     padding: 50px;
     border-radius: 5px;
 }
@@ -66,5 +66,7 @@ section {
 .nxtSlide {
     font-size: 70px;
     background-color: black;
+    color: white;
+    font-weight: 900;
     border-radius: 0 50% 50% 0;
 }
