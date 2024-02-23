@@ -1,0 +1,35 @@
+.gallery {
+    position: relative;
+    max-width: 1500px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 99%;
+    height: 500px;
+    border: dashed 1% #000;
+    overlay: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.slide1 {
+    background-color: rgb(34, 146, 180);
+    z-index: 6;
+}
+
+.slide2 {
+    background-color: rgb(90, 180, 34);
+    z-index: 5;
+}
+
+.slide3 {
+    background-color: rgb(133, 61, 150);
+    z-index: 4;
+}
+
+.slide4 {
+    background-color: rgb(180, 34, 34);
+    z-index: 3;
+}
