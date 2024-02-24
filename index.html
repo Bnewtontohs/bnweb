@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Benny's Website</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,40 +12,40 @@
       <a href="">About Me</a><a href="">Intelligence</a><a href="">Coming Soon...</a>
     </nav>
   </header>
-
   <section>
-    <h1>Welcome to my website</h1>
-    <!-- I will make a slideshow so one div with an image and description on the click of a button will slide of the screen to reveal the next -->
-    <p>Here is a slideshow of some of my favourite pictures</p>    
-      <div class="gallery">
-          <div class="slide slide1">
-            <img src="images/wrekin.jpeg" alt="Me ontop of the Wrekin">
-            <div>
-              <p>This is me on top of the Wrekin. The Wrekin is a hill which many people enjoy walking up in <address>Telford and Wrekin, Shropshire, UK</address></p>
-              <!--- Absolute button on mid left of the slide-->
-              <button class="nxtSlide" id="slide1-2"> > </button>
-            </div>
-          </div>
-          <div class="slide slide2">
-            <img src="images/aseyo.jpeg" alt="Me with my rabbit">
-            <p>fajkds</p>
-            <button class="nxtSlide" id="slide2-3">></button>
-          </div>
-          <div class="slide slide3">
-            <img src="images/snowman.jpeg" alt="Me after building a snowman">
-            <p>ajklfd</p>
-          </div>
-          <div class="slide slide4">
-                <img src="images/sky's_the_limit.jpeg" alt="Me in a bright blue sky background">
-                <p>akdjlfs</p>
-          </div>
-      </div>
+    <div class="gallery">
+      <div class="slide slide1">
+        <div>
+          <p>
+            Welcome to my website this a website about me and will probably contain new projects like a
+            calculator or a game. This a slide show that has some pictures of me. Feel free to click the
+            arrow to navigate through the slides.
+          </p>
+          <button class="galBtn" id="forwardBtn"><span class="material-symbols-outlined">arrow_forward_ios</span></button>
+        </div>
+        <div class="slide slide2">
+          <img src="images/aseyo.jpeg" alt="Me with my rabbit">
+          <img src="images/snowman.jpeg" alt="Me after building a snowman">
+          <img src="images/sky's_the_limit.jpeg" alt="Me in a bright blue sky background">
+          <img src="images/wrekin.jpeg" alt="Me ontop of the Wrekin">
+          <button class="galBtn" id="backBtn"><span class="material-symbols-outlined">arrow_forward_ios</span></button>
+        </div>
+    </div>
   </section>
-
   <footer>
     <!-- Add your footer content here -->
   </footer>
   <script>
+    const slide1 = document.querySelector('.slide1');
+    const slide2 = document.querySelector('.slide2');
+    const galBtn = document.querySelectorAll('.galBtn');
+
+    function slide() {
+      slide1.classList.toggle('move');
+      slide2.classList.toggle('move');
+    }
+
+    galBtn.addEventListener('click', slide);
 
   </script>
 </body>

@@ -20,7 +20,7 @@ section {
 
 .gallery {
     position: relative;
-    max-width: 1000px;
+    max-width: 1500px;
     height: 500px;
     overflow: hidden;
     margin: 0 auto;
@@ -32,18 +32,16 @@ section {
     height: 100%;
     display: flex;
     color: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
     font-size: 30px;
+    text-align: center;
+    transition: 5s;
 }
 
 .slide img {
     height: 400px;
-    padding: 50px;
-    border-radius: 5px;
-    text-align: center;
-    margin-top: auto;
+    padding: 10px;
+    margin: 40px;
+    border: 3px solid white;
 }
 
 .slide1 {
@@ -52,21 +50,12 @@ section {
 }
 
 .slide2 {
-    background-color: rgb(90, 180, 34);
+    background-color: rgb(3, 27, 76);
     z-index: 5;
+    left: 100%;
 }
 
-.slide3 {
-    background-color: rgb(133, 61, 150);
-    z-index: 4;
-}
-
-.slide4 {
-    background-color: rgb(180, 34, 34);
-    z-index: 3;
-}
-
-.nxtSlide {
+.galBtn {
     font-size: 70px;
     background-color: rgba(167, 167, 167, 0.407);
     color: rgb(0, 0, 0);
@@ -74,5 +63,14 @@ section {
     position: absolute;
     right: 0;
     top: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(0, -50%);
+}
+
+.slide1 .move {
+    right: 100%;
+    opacity: 0.5;
+}
+
+.slide2 .move {
+    left: 0;
 }
