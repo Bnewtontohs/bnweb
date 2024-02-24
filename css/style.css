@@ -20,9 +20,10 @@ section {
 
 .gallery {
     position: relative;
-    max-width: 1500px;
+    max-width: 1000px;
     height: 500px;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .slide {
@@ -41,6 +42,8 @@ section {
     height: 400px;
     padding: 50px;
     border-radius: 5px;
+    text-align: center;
+    margin-top: auto;
 }
 
 .slide1 {
@@ -65,8 +68,11 @@ section {
 
 .nxtSlide {
     font-size: 70px;
-    background-color: black;
-    color: white;
+    background-color: rgba(167, 167, 167, 0.407);
+    color: rgb(0, 0, 0);
     font-weight: 900;
-    border-radius: 0 50% 50% 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, 0);
 }
