@@ -37,11 +37,29 @@ section {
     transition: 5s;
 }
 
-.slide img {
+.image-container {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
     height: 400px;
     padding: 10px;
     margin: 40px;
     border: 3px solid white;
+}
+
+.caption {
+    position: absolute;
+    bottom: 10%;
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* White text color */
+    width: 100%;
+    padding: 10px;
+    text-align: center;
 }
 
 .slide1 {
