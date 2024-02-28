@@ -51,16 +51,6 @@ section {
     border: 3px solid white;
 }
 
-.caption {
-    position: absolute;
-    bottom: 10%;
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    color: #f1f1f1; /* White text color */
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-}
-
 .slide1 {
     background-color: rgb(34, 146, 180);
     z-index: 6;
