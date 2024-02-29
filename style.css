@@ -1,5 +1,5 @@
 * {
-    font-family: "Comic Sans MS", sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0;
 }
 
@@ -24,4 +24,21 @@ main {
     height: 100vh;
     position: relative;
     background-image: url(images/background2.jpg);
+    background-repeat: none;
+    background-size: cover;
+}
+
+main h1 {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    font-size: 70px;
+}
+
+main p {
+    position: absolute;
+    font-size: 10px;
+    top: 35%;
+    right: 20%;
+    height: calc(main h1);
 }
