@@ -36,22 +36,21 @@ main {
     color: white;
 }
 
-.welcome {
-    position: absolute;
-    text-align: center;
-    animation: fadeInSlideIn 1s linear;
+.slideUp {
+    animation: slideUp 1s linear forwards;
 }
 
-main h1 {
-    font-size: 70px;
-}
-
-@keyframes fadeInSlideIn {
+@keyframes slideUp {
     
     0% {
         opacity: 0;
         top: 100%;
     }
+
+    40% {
+        opacity: 0.7;
+    }
+
 
     100% {
         opacity: 1;
@@ -59,4 +58,13 @@ main h1 {
         left: 50%;
         transform: translate(-50%, -50%);
     }
+}
+
+.welcome {
+    position: absolute;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 70px;
 }
