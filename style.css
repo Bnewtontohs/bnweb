@@ -27,7 +27,7 @@ header {
 
 header h1 {
     font-size: 50px;
-    padding: 5px 10px;
+    padding: 15px 20px;
 }
 
 nav {
@@ -67,12 +67,11 @@ main {
     text-align: center;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(110, 110, 110, 0.422);
+    transform: translate(-50%, -50%);
     box-shadow: 3px 3px;
     text-shadow: 1px 1px;
     border-radius: 20px;
-    animation: slideUp 1.5s linear 0.2s forwards;
+    animation: slideUp 0.75s linear 0.2s forwards;
     
 }
 
