@@ -17,6 +17,7 @@ header h1 {
 }
 
 nav {
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
     height: 100%;
@@ -45,30 +46,6 @@ main {
     background-repeat: none;
     background-size: cover;
     color: white;
-}
-
-@keyframes slideUp {
-    
-    0% {
-        opacity: 0;
-        top: 100;
-    }
-
-    40% {
-        opacity: 0.7;
-    }
-
-
-    100% {
-        opacity: 1;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: 50%;
-    }
-}
-
-.slideUp {
-    animation: slideUp 1s linear 0.5s;
 }
 
 .welcome {
