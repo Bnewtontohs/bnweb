@@ -37,14 +37,14 @@ main {
 }
 
 .slideUp {
-    animation: slideUp 1s linear forwards;
+    animation: slideUp 1s linear;
 }
 
 @keyframes slideUp {
     
     0% {
         opacity: 0;
-        top: 100%;
+        transform: translateY(-100vh);
     }
 
     40% {
@@ -54,15 +54,17 @@ main {
 
     100% {
         opacity: 1;
+        transform: translate(-50%, -50%);
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
     }
 }
 
 .welcome {
     position: absolute;
     text-align: center;
+    top: 50%;
+    left: 50%;
 }
 
 main h1 {
