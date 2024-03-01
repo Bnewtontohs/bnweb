@@ -9,21 +9,32 @@ header {
     z-index: 9999;
     height: 75px;
     width: 100%;
+    border-bottom: white 0.5px;
+}
+
+header h1 {
+    font-size: 50px;
 }
 
 nav {
+    left: 50%;
+    transform: translateX(-50%);
     height: 100%;
-    width: 100%;
+    width: 50%;
     display: flex;
     justify-content: center;
     color: white;
 }
 
 nav a {
-    padding-left: 5px 10px;
+    padding: 5px 10px;
     color: white;
     text-decoration: none;
     font-size: 30px;
+}
+ 
+header, main {
+    color: white;
 }
 
 main {
@@ -34,10 +45,6 @@ main {
     background-repeat: none;
     background-size: cover;
     color: white;
-}
-
-.slideUp {
-    animation: slideUp 1s linear;
 }
 
 @keyframes slideUp {
@@ -60,12 +67,18 @@ main {
     }
 }
 
+.slideUp {
+    animation: slideUp 1s linear 0.5s;
+}
+
 .welcome {
     position: absolute;
     text-align: center;
     top: 50%;
     left: 50%;
     background-color: rgba(110, 110, 110, 0.422);
+    box-shadow: 3px 3px;
+    text-shadow: 1px;
 }
 
 main h1 {
