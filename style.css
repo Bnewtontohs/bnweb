@@ -34,24 +34,29 @@ main {
     background-repeat: none;
     background-size: cover;
     color: white;
-    display: flex;
+}
+
+.welcome {
+    position: absolute;
     text-align: center;
+    animation: fadeInSlideIn 1s linear;
 }
 
 main h1 {
-    position: absolute;
-    top: 35%;
-    left: 20%;
     font-size: 70px;
-    flex: 1;
 }
 
-main p {
-    position: absolute;
-    font-size: 10px;
-    top: 35%;
-    right: 20%;
-    height: calc(main h1);
-    flex: 1;
-    border-left: 0.5px solid white;
+@keyframes fadeInSlideIn {
+    
+    0% {
+        opacity: 0;
+        top: 100%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
