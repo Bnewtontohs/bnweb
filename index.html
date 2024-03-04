@@ -9,9 +9,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <span class="material-symbols-outlined menu">
-    menu
-  </span>
+  <button class="menuButton">
+    <span class="material-symbols-outlined menu">
+      menu
+    </span>
+  </button>
   <nav>
     <ul>
       <li><a href="#">Calculator</a></li>
@@ -51,7 +53,7 @@
     <!-- Add your footer content here -->
   </footer>
   <script>
-    const menu = document.querySelector('.menu');
+    const menu = document.querySelector('.menuButton');
     const nav = document.querySelector('nav');
     menu.addEventListener('click', () => {
       nav.classList.toggle('show');
