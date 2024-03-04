@@ -82,8 +82,8 @@ main h1 {
 }
 
 .projectItem {
-    width: 250px;
-    height: 250px;
+    width: 180px;
+    height: 200px;
     border-radius: 20%;
     position: relative;
 }
