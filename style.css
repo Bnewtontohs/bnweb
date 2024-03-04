@@ -66,7 +66,7 @@ main {
     left: 5%;
     background-color: rgba(240, 248, 255, 0.356);
     border-radius: 20px;
-
+    padding: 10px;
 }
 
 main h1 {
@@ -84,8 +84,8 @@ main h1 {
 }
 
 .projectItem {
-    width: 180px;
-    height: 200px;
+    width: 150px;
+    height: 175px;
     border-radius: 20%;
     position: relative;
 }
