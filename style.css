@@ -32,7 +32,7 @@ nav a {
     text-decoration: none;
     font-size: 30px;
 }
- 
+
 header, main {
     color: white;
 }
@@ -55,7 +55,7 @@ main {
     background-color: rgba(240, 248, 255, 0.356);
     text-shadow: 1px 1px;
     border-radius: 20px;
-    
+
 }
 
 main h1 {
@@ -64,17 +64,17 @@ main h1 {
 
 .projectGrid {
     position: absolute;
-    left: 50%;
+    left: 55%;
     top: 30%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 10px;
+    gap: 50px;
 }
 
 .projectItem {
-    width: 300px;
-    height: 500px;
+    width: 250px;
+    height: 300px;
     border-radius: 10%;
 }
 
