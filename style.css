@@ -73,19 +73,19 @@ main h1 {
 
 .projectItem {
     width: 250px;
-    height: 300px;
+    height: 250px;
     border-radius: 20%;
     position: relative;
 }
 
 .projectItem h2 {
-    padding: 20px;
+    padding: 30px;
 }
 
 .projectItem a {
     position: absolute;
-    bottom: 10px;
-    left: 20px;
+    bottom: 10%;
+    left: 10%;
     font-weight: bold;
 }
 
