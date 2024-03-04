@@ -17,16 +17,17 @@ nav {
 
 .menuButton {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    right: 0;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 9999;
+    border: none;
 }
 
 .menu {
     font-size: 70px;
     cursor: pointer;
     color: white;
+    text-decoration: none;
 }
 
 .show {
@@ -47,6 +48,7 @@ nav ul li {
     list-style: none;
     cursor: pointer;
     color: white;
+    font-size: 30px;
 }
 
 main {
@@ -85,13 +87,13 @@ main h1 {
 
 .projectItem {
     width: 150px;
-    height: 175px;
+    height: 200px;
     border-radius: 20%;
     position: relative;
 }
 
 .projectItem h2 {
-    padding: 30px;
+    padding: 10px;
 }
 
 .projectItem a {
