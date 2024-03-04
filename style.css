@@ -2,38 +2,43 @@
     font-family: "Roboto", sans-serif;
     font-weight: 50px;
     margin: 0;
-}
-
-header {
-    position: absolute;
-    z-index: 9999;
-    height: 75px;
-    width: 100%;
-    border-bottom: white 0.5px;
-    text-shadow: 1px 1px;
+    color: white;
 }
 
 nav {
-    top: 1%;
+    height: 0;
+    width: 0;
+    overflow: hidden;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 100%;
-    width: 50%;
+    right: 0;
+    transition: all 0.5s;
+}
+
+.menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.show {
+    height: 75px;
+    width: 950%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
-    color: white;
+    align-items: center;
+    height: 100%;
 }
 
-nav a {
-    padding: 5px 10px;
-    color: white;
-    text-decoration: none;
-    font-size: 30px;
-}
-
-header, main {
+nav ul li {
+    list-style: none;
+    cursor: pointer;
     color: white;
 }
 
