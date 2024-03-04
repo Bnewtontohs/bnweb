@@ -1,15 +1,3 @@
-@keyframes slideUp {
-    0% {
-        top: 100%;
-        opacity: 0.3;
-    }
-    100% {
-        top: 50%;
-        opacity: 1;
-    }
-}
-
-
 * {
     font-family: "Roboto", sans-serif;
     font-weight: 50px;
@@ -62,16 +50,44 @@ main {
 .welcome {
     position: absolute;
     text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 30%;
+    left: 5%;
     background-color: rgba(240, 248, 255, 0.356);
     text-shadow: 1px 1px;
     border-radius: 20px;
-    animation: slideUp 1s linear 0.2s forwards;
     
 }
 
 main h1 {
     font-size: 70px;
+}
+
+.projectGrid {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.projectItem {
+    width: 300px;
+    height: 500px;
+    border-radius: 10%;
+}
+
+.projectItem h2 {
+    padding: 20px;
+}
+
+.item1 {
+    background-image: url("images/a917ac3724f85d3391fd4c1563d419ec.jpeg");
+    background-position: cover;
+}
+
+.orange {
+    color: orange;
+    font-weight: bold;
 }
