@@ -74,7 +74,7 @@ main h1 {
 .projectGrid {
     position: absolute;
     left: 55%;
-    top: 30%;
+    top: 25%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
