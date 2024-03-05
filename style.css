@@ -32,7 +32,7 @@ nav {
 
 .show {
     height: 75px;
-    width: 950%;
+    width: 100%;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -42,6 +42,7 @@ nav ul {
     justify-content: space-around;
     align-items: center;
     height: 100%;
+    width: 100%;
 }
 
 nav ul li {
