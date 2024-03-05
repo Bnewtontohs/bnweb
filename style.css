@@ -21,13 +21,11 @@ nav {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 9999;
     border: none;
+    color: white;
 }
 
 .menu {
     font-size: 70px;
-    cursor: pointer;
-    color: white;
-    text-decoration: none;
 }
 
 .show {
@@ -91,6 +89,7 @@ main h1 {
     height: 200px;
     border-radius: 20%;
     position: relative;
+    background-color: rgba(30, 136, 222, 0.512);
 }
 
 .projectItem h2 {
