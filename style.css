@@ -5,57 +5,11 @@
     color: white;
 }
 
-nav {
-    height: 0;
-    width: 0;
-    overflow: hidden;
-    position: absolute;
-    right: 0;
-    transition: all 0.5s;
-    z-index: 999;
-}
-
-.menuButton {
-    position: absolute;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9999;
-    border: none;
-    color: white;
-}
-
-.menu {
-    font-size: 70px;
-}
-
-.show {
-    height: 75px;
-    width: 100%;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-nav ul li {
-    list-style: none;
-    cursor: pointer;
-    color: white;
-    font-size: 30px;
-}
-
 main {
     width: 100%;
     height: 100vh;
     position: relative;
-    background-image: url("images/wp9417490-4k-amazon-river-wallpapers.jpg");
-    background-repeat: none;
+    background-image: url("images/mountains-blue-sky-mountain-range-fog-peak-3840x2160-5364.jpg");
     background-size: cover;
     color: white;
 }
@@ -64,7 +18,9 @@ main {
     position: absolute;
     text-align: center;
     top: 30%;
-    left: 5%;
+    left: 50%;
+    height: 325px;
+    transform: translate(-50%, -50%);
     background-color: rgba(240, 248, 255, 0.356);
     border-radius: 20px;
     padding: 10px;
@@ -75,18 +31,19 @@ main h1 {
 }
 
 .projectGrid {
-    position: absolute;
-    left: 55%;
-    top: 25%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    height: 500px;
+    width: 510px;
+    position: absolute;
+    top: calc(30vh + 225px);
+    left: 50%;
+    transform: translateX(-50%);
     gap: 50px;
 }
 
 .projectItem {
-    width: 150px;
-    height: 200px;
     border-radius: 20%;
     position: relative;
     background-color: rgba(30, 136, 222, 0.512);
