@@ -57,7 +57,7 @@ main p {
     border-radius: 20%;
     position: relative;
     background-color: rgba(30, 136, 222, 0.512);
-    transition: 0.5a;
+    transition: 0.5s;
 }
 
 .projectItem:hover {
