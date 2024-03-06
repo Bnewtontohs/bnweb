@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button class="operator" value="+">+</button>
+            <button class="operator" value="-">-</button>
+            <button class="operator" value="*">*</button>
+            <button class="operator" value="/">/</button>
+            <button class="number" value="1">1</button>
+            <button class="number" value="2">2</button>
+            <button class="number" value="3">3</button>
+            <button class="number" value="4">4</button>
+            <button class="number" value="5">5</button>
+            <button class="number" value="6">6</button>
+            <button class="number" value="7">7</button>
+            <button class="number" value="8">8</button>
+            <button class="number" value="9">9</button>
+            <button class="number" value="0">0</button>
+            <button id="clear">C</button>
+            <button id="equals">=</button>
+        </div>
+    </div>
+    <script>
+        let display = document.getElementById('display');
+        let numbers = document.querySelectorAll('.number');
+        let operators = document.querySelectorAll('.operator');
+        let clear = document.getElementById('clear');
+        let equals = document.getElementById('equals');
+        let operator = '';
+        let value = '';
+
+        numbers.forEach(function(button) {
+            button.addEventListener('click', function() {
+                display.value += button.value;
+            });
+        });
+
+        operators.forEach(function(button) {
+            button.addEventListener('click', function() {
+                operator = button.value;
+                value = display.value;
+                display.value = '';
+            });
+        });
+
+        equals.addEventListener('click', function() {
+            display.value = eval(value + operator + display.value);
+        });
+
+        clear.addEventListener('click', function() {
+            display.value = '';
+            value = '';
+            operator = '';
+        });
+    </script>
+</body>
+</html>
