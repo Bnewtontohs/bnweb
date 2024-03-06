@@ -1,6 +1,8 @@
 .calculator {
     width: 200px;
     margin: 0 auto;
+    border: 1px solid #000;
+    background-color: orange;
 }
 
 #display {
@@ -19,4 +21,6 @@ button {
     height: 50px;
     border-radius: 50%;
     font-size: 18px;
+    border: none;
+
 }

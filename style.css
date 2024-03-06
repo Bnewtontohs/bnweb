@@ -67,6 +67,7 @@ main p {
     bottom: 10%;
     left: 10%;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .item1 {
