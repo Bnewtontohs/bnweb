@@ -32,6 +32,7 @@ main {
 
 main h1 {
     font-size: 70px;
+    color: transparent;
 }
 
 .projectGrid {
@@ -41,7 +42,7 @@ main h1 {
     height: 300px;
     width: 510px;
     position: absolute;
-    top: calc(30vh + 225px);
+    top: calc(30vh + 175px);
     left: 50%;
     transform: translateX(-50%);
     gap: 50px;
