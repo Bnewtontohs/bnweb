@@ -44,7 +44,7 @@ main p {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     height: 300px;
-    width: 510px;
+    width: 500px;
     position: absolute;
     top: calc(30vh + 175px);
     left: 50%;
@@ -52,10 +52,20 @@ main p {
     gap: 30px;
 }
 
+.projectGrid:hover {
+    background-color: rgba(240, 248, 255, 0.356);
+    border-radius: 20px;
+}
+
 .projectItem {
     border-radius: 20%;
     position: relative;
     background-color: rgba(30, 136, 222, 0.512);
+    transition: 0.5a;
+}
+
+.projectItem:hover {
+    transform: scale(1.2);
 }
 
 .projectItem h2 {
