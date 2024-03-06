@@ -19,11 +19,15 @@ main {
     text-align: center;
     top: 30%;
     left: 50%;
-    height: 325px;
+    height: 300px;
     transform: translate(-50%, -50%);
     background-color: rgba(240, 248, 255, 0.356);
     border-radius: 20px;
     padding: 10px;
+    background: linear-gradient(to right, rgb(68, 20, 226), rgb(164, 13, 13), rgb(0, 0, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 main h1 {
