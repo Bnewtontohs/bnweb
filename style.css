@@ -85,3 +85,9 @@ main p {
     color: orange;
     font-weight: bolder;
 }
+
+p a {
+    display: inline;
+    color: inherit;
+    text-decoration: inherit;
+}
