@@ -27,7 +27,6 @@ main {
     background: linear-gradient(to right, black, rgb(68, 20, 226), rgb(164, 13, 13), rgb(0, 0, 0));
     background-clip: text;
     -webkit-background-clip: text;
-    pointer-events: none;
 }
 
 main h1 {
