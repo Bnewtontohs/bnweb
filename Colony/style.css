@@ -1,0 +1,412 @@
+* {
+    margin: 0;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    color: grey;
+    font-weight: bold;
+    --main-blue: rgb(44, 130, 228);
+    text-transform: uppercase;
+}
+
+header {
+    width: 100%;
+    height: 115px;
+    background-color: rgba(255, 255, 255, 0.774);
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.logo {
+    height: 100%;
+    float: left;
+    position: relative;
+    padding-left: 22%;
+}
+
+.logo img {
+    width: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,  -50%);
+}
+
+nav {
+    float: right;
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: flex-start;
+}
+
+.phone {
+    flex: 100%;
+    padding-left: 90%;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.nav_links {
+    font-size: 15px;
+    font-weight: 800;
+    color: gray;
+}
+
+.nav_links:hover {
+    border-bottom: var(--main-blue) solid 3px;
+}
+
+.nav_button {
+    padding: 0;
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+    display: none;
+}
+
+.nav_button span {
+    color: white;
+    font-size: 50px;
+}
+
+.mobileNav {
+    top: 50px;
+    z-index: 999;
+    position: absolute;
+    background-color: rgba(60, 130, 228, 0.905);
+    height: 280px;
+    width: 100%;
+    display: none;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.mobileNav li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.mobnav_links {
+    color: white;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.floatingTextDiv {
+    font-size: 35px;
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    transform: translate(0, -50%);
+}
+
+.floatingTextDiv h1 {
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+.floatingTextDiv h1 span {
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.floatingTextDiv button {
+    background-color: var(--main-blue);
+    padding: 15px 40px;
+    color: white;
+    font-size: 17.5px;
+    font-weight: bold;
+    border: none;
+}
+
+.whitespace {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 65%;
+    height: 75px;
+    transform: translateX(-50%);
+    background-color: white;
+}
+
+.getStarted {
+    position: relative;
+    height: 600px;
+}
+
+.getStarted h1 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    text-align: center;
+    width: 65%;
+    height: 50px;
+    font-size: 27.5px;
+    letter-spacing: 1.5px;
+}
+
+.flexGrid {
+    position: absolute;
+    height: 400px;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 65%;
+}
+
+.flexGridItem {
+    height: 100%;
+    flex: 1;
+}
+
+.flexGridItem img , .flexGridItem button {
+    margin-left: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transform: translateX(-50%);
+}
+
+.flexGridItem p {
+    text-transform: none;
+    text-align: center;
+    font: 1.1em sans-serif;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.flexGridItem button {
+    border: solid var(--main-blue) 2.5px;
+    padding: 12.5px;
+    color: var(--main-blue);
+    font-size: 15px;
+    font-weight: 900;
+    background-color: rgba(240, 248, 255, 0);
+    
+}
+
+.item2 {
+    border-left: solid 0.5px rgba(128, 128, 128, 0.377);
+    border-right: solid 0.5px rgba(128, 128, 128, 0.397);
+}
+
+.houseSec {
+    position: relative;
+    background-image: url("images/house_background.jpg");
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+}
+
+.houseSec h2 {
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    font-weight: 200;
+    left: 50%;
+    font-size: 27.5px;
+    transform: translateX(-50%);
+}
+
+.blue {
+    color: var(--main-blue);
+}
+
+.blueline {
+    padding-bottom: 7.5px;
+    border-bottom: solid 3px var(--main-blue);
+}
+
+.line2 {
+    position: absolute;
+    top: 15%;
+    font-size: 60px;
+    color: var(--main-blue);
+    left: 49%;
+}
+
+.houseSec p {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 500;
+    text-transform: none;
+    font-size: 18px;
+}
+
+.rowGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    width: 80%;
+    height: 200px;
+}
+
+.rowItem {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+
+.rowItem h2 {
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: var(--main-blue);
+}
+
+.rowItem p {
+    color: var(--main-blue);
+}
+
+.blueBanner {
+    background-color: var(--main-blue);
+    height: 120px;
+    width: 100%;
+}
+
+.loanTypes {
+    background-image: url(images/boards_background.jpg);
+    height: 1000px;
+    width: 100%;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.loanTypes h1 {
+    font-size: 40px;
+    font-weight: normal;
+    justify-self: center;
+    margin: 50px;
+}
+
+.loanGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+    flex-basis: 100%;
+    padding: 10px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.loanItem {
+    background-color: rgb(224, 224, 224);
+    z-index: 999;
+    position: relative;
+}
+
+.loanItem h5 {
+    color: var(--main-blue);
+    font-size: 15px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.loanTypes button {
+    margin: 50px;
+    height: 75px;
+    width: 200px;
+    color: var(--main-blue);
+    padding: 10px;
+    background-color: rgba(245, 245, 245, 0.3);
+    border: blue solid 5px;
+    font-size: 20px;
+    justify-self: center;
+}
+
+footer {
+    background-color: rgb(151, 151, 151);
+    height: 40vh;
+    width: 100%;
+    position: relative;
+    font-size: 15px;
+}
+
+footer ul {
+    padding: 20px;
+}
+
+.secondul {
+    position: absolute;
+    left: 20%;
+    top: 0px;
+}
+
+footer li {
+    list-style-type: none;
+    padding: 7.5px;
+}
+
+footer li a {
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+footer p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+    header {
+        position: relative;
+        background-color: var(--main-blue);
+        height: 50px;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .logo img {
+        filter: contrast(100);
+    }
+
+    nav {
+        display: none;
+    }
+
+    .nav_button {
+        display: block;
+        float: right;
+    }
+
+    .floatingTextDiv {
+        left: 2%;
+    }
+}
