@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/rio.css">
+    <title>Wish Bought Cafe Rio</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="menu">
+                <button onclick="navigation()" id="navButton">
+                    <span class="material-symbols-outlined person">
+                        menu
+                    </span>
+                </button>
+            </div>
+            <img class="logo" src="images/Cafe_Rio_logo.svg">
+            <div class="signin">
+                <span class="material-symbols-outlined person">
+                person
+                </span>
+                <h4 class="hide">Sign in & Earn Rewards</h4>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="">Order</a></li>
+                    <li><a href="">Catering</a></li>
+                    <li><a href="">My Rio Rewards</a></li>
+                    <li><a href="">Gift Cards</a></li>
+                    <li><a href="">Careers</a></li>
+                </ul>
+            </nav>
+            <div class="location"  onclick="zipCode()">
+                <span class="material-symbols-outlined">
+                location_on
+                </span>
+                Find your local Cafe Rio</div>
+            <div class="bag">
+                <span class="material-symbols-outlined icon">
+                        shopping_bag
+                </span>
+            </div>
+        </div>
+    </header>
+    <section>
+        <h1 id="myDemo"></h1>
+    </section>
+    <div id="mobileNav" class="mobileNav">
+        <button onclick="xButton()"><span class="material-symbols-outlined">
+            close
+            </span>
+        </button>
+        <br>
+        <br>
+        <div class="signin">
+            <span class="material-symbols-outlined person">
+            person
+            </span>
+            <h4 class="hide">Sign in & Earn Rewards</h4>
+        </div>
+        <div>
+            <a href="">Order</a>
+            <a href="">Catering</a>
+            <a href="">My Rio Rewards</a>
+            <a href="">Gift Cards</a>
+            <a href="">Careers</a>
+        </ul>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

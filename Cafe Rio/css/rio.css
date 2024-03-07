@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+}
+body {
+    background-color: rgb(241, 246, 247);
+}
+
+header {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.person {
+    font-size: 15px;
+}
+
+.container {
+    max-width: 1800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    'logo signin nav location bag'
+    ;
+    background-color: rgb(255, 255, 255);
+    justify-items: center;
+    align-items: center;
+    grid-template-columns:auto auto 1fr auto auto;
+}
+
+.menu {
+    padding: 10px;
+    margin: 5px;
+    font-size: 30px;
+    grid-area: nav;
+    display: none;
+}
+
+.menu span {
+    font-size: 30px;
+}
+
+
+.logo {
+    grid-area: logo;
+    width: 150px;
+    margin-left: 10px;
+}
+
+.signin {
+    grid-area: signin;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px 10px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.signin span {
+    padding-right: 5px;
+}
+
+.signin:hover {
+    background-color: rgba(160, 159, 159, 0.1);
+}
+
+.location {
+    grid-area: location;
+    padding: 5px 10px;
+    display: flex;
+    font-size: 15px;
+}
+
+.location span {
+    padding-right: 5px;
+}
+
+.location:hover {
+    background-color: rgba(160, 159, 159, 0.1);
+}
+
+.bag {
+    grid-area: bag;
+    margin-left: 10px;
+    padding: 5px 10px;
+}
+
+.bag:hover {
+    background-color: rgba(160, 159, 159, 0.1);
+}
+
+.icon {
+    font-size: 30px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.nav ul {
+    padding-inline-start: 0;
+    margin-inline-start: 0;
+}
+
+.nav ul li {
+    display: inline;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+.nav ul li a{
+    color: black;
+    font-weight: 600;
+    transition: 200ms;
+    text-transform: uppercase;
+}
+
+.nav ul li a:hover {
+    color: rgb(168, 12, 12);
+    border-bottom: solid 3px red;
+}
+
+@media screen and (max-width: 1200px) {
+    nav {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+
+    .container {
+
+        grid-template-areas: 
+        'nav logo signin location bag'
+        ;
+        grid-template-columns: 80px auto 1fr auto auto;
+    }
+
+    .signin {
+        justify-self: flex-start;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        grid-template-areas: 
+        'nav logo location signin bag'
+        ;
+        grid-template-columns: 80px auto 1fr auto auto;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .signin {
+        justify-self: flex-start;
+        padding: 5px;
+        margin: 0;
+    }
+
+    .signin span {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        grid-template-areas: 
+        'nav logo signin bag'
+        'location location location location'
+        ;
+        grid-template-columns: 80px auto auto auto;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .signin {
+        padding: 5px;
+        justify-self: flex-end;
+        margin: 0;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    .signin span {
+        font-size: 30px;
+    }
+}
+
+iframe {
+    width: 100%;
+    height: 800px;
+    align-self: center;
+    
+}
+
+#navButton {
+    border: none;
+    background-color: whitesmoke;
+}
+
+.mobileNav {
+    width: 0%;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: 200ms;
+    margin: 210px 50%;
+}
+
+.mobileNav div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-top: solid 2px rgba(177, 177, 177, 0.527);
+    margin: 5%;
+}
+
+#mobileNav a {
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    transition: 200ms;
+    padding-top: 20px;
+}
+
+#mobileNav a:hover {
+    color: rgb(168, 12, 12);
+    border-bottom: solid 3px red;
+}
+
+#mobileNav button {
+    float: right;
+    font-size: xx-large;
+    padding: 0 5px;
+    margin: 10px 10px 0 0;
+    border-radius: 20%;
+    background-color: rgb(12, 146, 135);
+    border: none;
+}
+
+.display {
+    height: 100%;
+    transition: 0.5s;
+    background-color: white;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+
+.mobileNav .signin {
+    border: solid 5px rgb(12, 146, 135);
+    margin-left: 42%;
+    width: 20%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
