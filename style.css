@@ -8,10 +8,12 @@
 @keyframes bounce {
     50% {
         bottom: 0;
+        background-color: rgb(65, 238, 166);
     }
 
     100% {
         top: 0;
+        background-color: rgb(31, 226, 216);
     }
 }
 
