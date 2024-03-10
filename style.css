@@ -5,38 +5,13 @@
     color: white;
 }
 
-@keyframes bounce {
-    50% {
-        bottom: 0;
-        background-color: rgb(65, 238, 166);
-    }
-
-    100% {
-        top: 0;
-        background-color: rgb(31, 226, 216);
-    }
-}
-
-.dot {
-    position: absolute;
-    top: 0;
-    display: flex;
-    padding: 0 2.5%;
-    background-color: azure;
-    filter: blur(20px);
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    animation: bounce 4s ease-in-out 10ms infinite;
-}
-
 main {
     width: 100%;
     height: 100vh;
     position: relative;
     background-color: rgb(13, 36, 56);
-    /*background-image: url("images/mountains-blue-sky-mountain-range-fog-peak-3840x2160-5364.jpg");
-    background-size: cover;*/
+    background-image: url("images/mountains-blue-sky-mountain-range-fog-peak-3840x2160-5364.jpg");
+    background-size: cover;
     color: white;
 }
 
