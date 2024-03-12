@@ -28,6 +28,7 @@ main {
     background: linear-gradient(to right, black, rgb(68, 20, 226), rgb(164, 13, 13), rgb(0, 0, 0));
     background-clip: text;
     -webkit-background-clip: text;
+    z-index: 100;
 }
 
 main h1 {
@@ -57,7 +58,6 @@ main p {
     border-radius: 20%;
     position: relative;
     background-color: rgba(30, 136, 222, 0.512);
-    filter: blur(5px);
     transition: 0.5s;
 }
 
